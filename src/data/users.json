@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1fbb807d972847cbb65096a22403bd2f",
+        "email": "louise@permify.co",
+        "name": "Louise Walker",
+        "role": "admin",
+        "permission": ["project-index", "project-create", "project-delete"]
+    },
+    {
+        "id": "b108ceae1cfb46dfb34e3aa7c9f28606",
+        "email": "miguel@permify.co",
+        "name": "Miguel Jensen",
+        "role": "editor",
+        "permission": ["content-index", "content-create", "content-delete"]
+    },
+    {
+        "id": "c2349776bd364fac9debf397e3f4538a",
+        "email": "greg@permify.co",
+        "name": "Greg Howell",
+        "role": "agent",
+        "permission": ["contact-index"]
+    },
+    {
+        "id": "73b612c40a2044718123d476e45a2245",
+        "email": "leonard@permify.co",
+        "name": "Leonard Wade",
+        "role": "agent",
+        "permission": ["contact-index","contact-create", "contact-delete"]
+    },
+    {
+        "id": "9455a30af8e141ba905a27e7855babde",
+        "email": "alex@permify.co",
+        "name": "Alex Collins",
+        "role": "agent",
+        "permission": [""]
+    }
+]
