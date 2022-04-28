@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #262626;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 380px;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-login {
+    color: #fff;
+    border-color: #6318ff;
+    background: #6318ff;
+    border-radius: 6px;
+    height: 40px!important;
+    min-width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}

@@ -1,5 +1,12 @@
+//components
+import Home from "./Home";
+import Login from "./Login";
+
+//ant design
+import "antd/dist/antd.min.css";
+
 function App() {
-  return <div>React Role Demo</div>;
+  return <div>Permify React Role</div>;
 }
 
 export default App;
