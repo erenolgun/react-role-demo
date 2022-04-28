@@ -7,10 +7,10 @@ import {
   UnorderedListOutlined,
   MailOutlined,
   PhoneOutlined,
-  SearchOutlined,
+  LogoutOutlined,
 } from "@ant-design/icons";
 
-function Home() {
+function Home(props) {
   const columns = [
     {
       title: () => {
@@ -94,9 +94,24 @@ function Home() {
       });
   }
 
+  function logoutHandler() {
+    localStorage.clear();
+    window.location.reload();
+  }
+
   return (
     <div className="table-container">
-      <div className="create-button">Create Contact</div>
+      <div className="header">
+        <div className="welcome">
+          Welcome, <strong>{props.user.name}</strong>{" "}
+        </div>
+        <div className="button-container">
+          <div className="button logout-btn" onClick={logoutHandler}>
+            <LogoutOutlined /> Log out
+          </div>
+          <div className="button create-btn">Create Contact</div>
+        </div>
+      </div>
       <div>
         <Table
           loading={isLoading}

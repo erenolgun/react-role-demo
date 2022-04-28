@@ -1,12 +1,22 @@
 import React from "react";
 import "./Login.css";
-import { Form, Input } from "antd";
+import { Form, Input, message } from "antd";
+import { users } from "./data";
 
 function Login() {
   const [form] = Form.useForm();
 
-  const onFinish = () => {
-    //we will check our mock data with entered email
+  const onFinish = (values) => {
+    let loggedUser = users.find((user) => user.email === values.email);
+
+    if (loggedUser !== undefined) {
+      localStorage.setItem("user", JSON.stringify(loggedUser));
+      localStorage.setItem("name", loggedUser.name);
+      message.success("You successfully logged in!");
+      window.location.reload();
+    } else {
+      message.error("Wrong email, please check your email!");
+    }
   };
 
   return (
