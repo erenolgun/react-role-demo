@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Table, Tag, Space, Input } from "antd";
-import "./Home.css";
 
+//react-role
+import { HasAccess } from "@permify/react-role";
+
+//ant-design
+import { Table } from "antd";
 import {
   IdcardOutlined,
   UnorderedListOutlined,
@@ -9,6 +12,9 @@ import {
   PhoneOutlined,
   LogoutOutlined,
 } from "@ant-design/icons";
+
+//components
+import "./Home.css";
 
 function Home(props) {
   const columns = [
@@ -109,7 +115,13 @@ function Home(props) {
           <div className="button logout-btn" onClick={logoutHandler}>
             <LogoutOutlined /> Log out
           </div>
-          <div className="button create-btn">Create Contact</div>
+          <HasAccess
+            roles={["admin", "editor"]}
+            permissions="contact-create"
+            renderAuthFailed={null}
+          >
+            <div className="button create-btn">Create Contact</div>
+          </HasAccess>
         </div>
       </div>
       <div>

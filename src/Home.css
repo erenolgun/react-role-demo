@@ -30,12 +30,12 @@ body {
 .create-btn {
     background-color: #6318ff;
     padding: 14px 23px;
+    margin-left: 20px;
 }
 
 .logout-btn {
     background-color: red;
     padding: 14px 18px;
-    margin-right: 20px;
 }
 
 .column-container {

@@ -32,6 +32,6 @@
         "email": "alex@permify.co",
         "name": "Alex Collins",
         "role": "agent",
-        "permission": [""]
+        "permission": []
     }
 ]

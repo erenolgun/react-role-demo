@@ -2,8 +2,11 @@ import React from "react";
 import "./Login.css";
 import { Form, Input, message } from "antd";
 import { users } from "./data";
+import { usePermify } from "@permify/react-role";
 
 function Login() {
+  const { setUser } = usePermify();
+
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
@@ -12,7 +15,15 @@ function Login() {
     if (loggedUser !== undefined) {
       localStorage.setItem("user", JSON.stringify(loggedUser));
       localStorage.setItem("name", loggedUser.name);
-      message.success("You successfully logged in!");
+
+      console.log(loggedUser);
+
+      setUser({
+        id: loggedUser.id,
+        roles: [loggedUser.role],
+        permissions: loggedUser.permission,
+      });
+
       window.location.reload();
     } else {
       message.error("Wrong email, please check your email!");

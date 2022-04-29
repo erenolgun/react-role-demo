@@ -1478,6 +1478,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@permify/react-role@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@permify/react-role/-/react-role-0.5.3.tgz#2571aa9c399da8641ffc9d73383bf34209d11c04"
+  integrity sha512-6dbQUG6UFfNUoaAZmZSB5QWnHRkE2ahYoRu3OHtwbNPbTmBbV5XMrO/7iuoV5sqwdlhiYiivQujMQC5t43URog==
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.3":
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.5.tgz#e77aac783bd079f548daa0a7f080ab5b5a9741ca"
